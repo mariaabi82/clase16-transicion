@@ -1,0 +1,54 @@
+body {
+    background-color: 0;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ejemplo {
+    border: 2px solid blue;
+    height: 200px;
+}
+
+.img-container {
+    height: 20px;
+    display: flex;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    width: 200px;
+    height: 200px;
+    background-image: url("http://placekitten.com/500");
+    background-position: center;
+    background-size: cover;
+    margin: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.image:hover {
+    background-color:(rgba(0, 62, 128, 0.7));
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: (rgba(0, 62, 128, 0.7));
+    transform: translateY(500px);
+    transition: transform 1s;
+}
+
+.image:hover .overlay {
+    transform: translateY(0)
+}
